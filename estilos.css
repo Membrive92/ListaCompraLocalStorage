@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+
+
+
+
+}
+.Comprado{
+    text-decoration: line-through #ff564d solid ;
+
+}
+
+.material-icons{
+    font-size:  20rem;
+
+}
+.fondo{
+
+
+    padding-left:  15%;
+    background-color: #2686ff;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+
+}
+.ajustes{
+    margin-bottom: 10%;
+    background-color: #2686ff;
+    font-size: 60px;
+}
+
+p{
+
+    margin-bottom: 2%;
+
+
+}
+ul{
+    font-size: 60px;
+}
+
+li{
+    background-color: #2686ff;
+    font-size: 60px;
+}
+.botonflotante{
+    background-color: #2686ff;
+}
+.cabecera{
+  background-color:#2686ffff ;
+    margin: 0;
+    justify-items: end;
+
+}
+
+
+.modal .cabecera{
+    background-color:#2686ffff ;
+    margin: 0;
+    justify-items: end;
+
+}
+.modal input{
+    font-size: 30px;
+}
+.lista{
+    overflow: scroll;
+}
+.icono1 {
+    margin-top: 10px;
+  position:absolute;
+    right: 8%;
+
+
+}
+.icono2{
+    margin-top: 10px;
+    margin-left: 10px;
+    position:absolute;
+    right: 15%;
+}

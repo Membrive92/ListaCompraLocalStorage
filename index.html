@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ListaCompra</title>
+
+
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+<nav class="ajustes">
+    <div class="nav-wrapper   ">
+        <a href="#!" class="brand-logo left-align">ListaCompra</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a class="white-text"  href="#" onclick="ComprarTodo(1)"><i class="material-icons">
+                shopping_cart
+            </i>Marcar Todo</a></li>
+            <li  ><a class="white-text" onclick="ComprarTodo(0)" href="#"><i class="material-icons">
+                remove_shopping_cart
+            </i> Desmarcar Todo</a></li>
+
+            <li  ><a href="#idBorrar"   class="modal-trigger white-text"><i class="material-icons">
+                delete
+            </i>Vaciar Todo</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!--<button data-target="modal1" class="btn modal-trigger">Modal</button> -->
+
+<!-- Modal Structure -->
+<div id="idBorrar" class="modal blue white-text">
+    <div class="modal-content ">
+        <h4 >Vaciar Lista</h4>
+
+    </div>
+    <div class="modal-content "><p>¿Estas seguro de que quieres vaciar la lista?</p></div>
+
+        <div class="modal-footer" >
+        <a  href="#!" onclick="BorrarTodo()"
+           class="modal-action modal-close waves-effect waves-light btn blue-text lighten-2  btn-flat">Borrar</a>
+        <a href="#" class="modal-action modal-close waves-effect waves-light blue-text lighten-2  btn btn-flat">Cancelar</a>
+        </div>
+
+</div>
+
+
+
+
+
+
+<div id="lista"></div>
+
+<div class="fixed-action-btn  ">
+    <a href="#idmodaladd" class="btn-floating btn-large botonflotante  modal-trigger">
+        <i class="large material-icons botonflotante">add</i>
+    </a>
+
+</div>
+
+
+<div id="idmodaladd" class="modal blue white-tex">
+    <div class="modal-content">
+        <h4 class="white-text">Añadir Producto</h4>
+        <input maxlength="13" class="white-text validate" style="font-size: 30px" type="text" autocomplete="on" id="productoAdd" placeholder="producto" autofocus>
+    </div>
+    <div class="modal-footer">
+
+        <a id="add" href="#"
+           class="modal-action  waves-effect  blue-text waves-green btn-flat">añadir</a>
+        <a href="#" class="modal-action modal-close   btn blue-text  waves-effect waves-green btn-flat">Cancelar</a>
+    </div>
+</div>
+
+
+
+
+
+<div id="idmodalupdt" class="modal blue white-tex">
+    <div class="modal-content">
+        <h4 class="white-text">Modificar Producto</h4>
+        <input maxlength="13" style="font-size: 30px" class="white-text" type="text" autocomplete="on" id="productoupdt" placeholder="producto" autofocus>
+    </div>
+    <div class="modal-footer">
+        <a id="updt" href="#"
+           class="modal-action modal-close waves-effect waves-green btn blue-text btn-flat">Modificar</a>
+        <a href="#" class="modal-action modal-close btn blue-text  waves-effect waves-green btn-flat">Cancelar</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="JS/materialize/js/materialize.js"></script>
+<script src="GianlucaGuarini-Tocca.js-47ac0e0/Tocca.js"></script>
+<script src="JS/main.js"></script>
+</body>
+</html>
